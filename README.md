@@ -9,7 +9,7 @@ the user will be allowed to cycle though a list of disney characters. Then when 
 
 
 ## Wireframes:
-[Wireframe Created Using Figma](https://www.figma.com/file/zhlHmybwwZ6oVnql3n1rS5/Pokedex-Layout?node-id=0%3A1)
+[Wireframe Created Using Figma](https://www.figma.com/file/e4nOWmsBEYLBgRfb3t4tlO/Disney-Pedia?node-id=0%3A1)
 
 Desktop (All character)         |        Tablet (Listing) | Mobile (All character)  |
 :-------------------------:|:-------------------------:|:------------------:
