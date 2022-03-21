@@ -13,13 +13,13 @@ the user will be allowed to cycle though a list of disney characters. Then when 
 
 Desktop (All character)         |        Tablet (Listing) | Mobile (All character)  |
 :-------------------------:|:-------------------------:|:------------------:
-<img src="https://i.postimg.cc/htLSMfNJ/disney-All-characters-2022-03-21-at-3-15-27-AM.png" width="400">| <img src="" width="200">  | <img src="https://i.postimg.cc/Kvgck9ND/disney-mobile-all-character-2022-03-21-at-3-19-25-AM.png" width="150">  |
+<img src="https://i.postimg.cc/htLSMfNJ/disney-All-characters-2022-03-21-at-3-15-27-AM.png" width="400">| <img src="https://i.postimg.cc/MKRGndvg/diseny-tablet-all-characters-2022-03-21-at-12-52-56-PM.png" width="200">  | <img src="https://i.postimg.cc/Kvgck9ND/disney-mobile-all-character-2022-03-21-at-3-19-25-AM.png" width="150">  |
 
 Desktop (Homepage)                   |        Tablet (Homepage)            | Mobile (Homepage)          |
- <img src="https://i.postimg.cc/rpqqHqLf/disney-search-desktop-2022-03-21-at-3-16-30-AM.png" width="400">| <img src="" width="200">  | <img src="https://i.postimg.cc/T1BRNmRb/disney-mobile-search-2022-03-21-at-3-21-12-AM.png" width="150">  |
+ <img src="https://i.postimg.cc/rpqqHqLf/disney-search-desktop-2022-03-21-at-3-16-30-AM.png" width="400">| <img src="https://i.postimg.cc/qvTvyyKq/diseny-tablet-search-2022-03-21-at-1-03-17-PM.png" width="200">  | <img src="https://i.postimg.cc/T1BRNmRb/disney-mobile-search-2022-03-21-at-3-21-12-AM.png" width="150">  |
 
  Desktop (Random)                   |        Tablet (Random)            | Mobile (Random)          |
- <img src="https://i.postimg.cc/cLyxQQky/disney-rabdom-2022-03-21-at-3-18-24-AM.png" width="400">| <img src="" width="200">  | <img src="" width="150">  |
+ <img src="https://i.postimg.cc/cLyxQQky/disney-rabdom-2022-03-21-at-3-18-24-AM.png" width="400">| <img src="https://i.postimg.cc/VkWLRv9R/disney-tablet-random2022-03-21-at-1-10-30-PM.png" width="200">  | <img src="https://i.postimg.cc/xjBCjWTK/diseny-mobile-random-2022-03-21-at-1-31-43-PM.png" width="150">  |
 
 ## Disney Api
 
