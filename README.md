@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Description of api
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+the disney api allows the user to get information(films,tv shows,theampark atacration) on any disney characters from over the years.
+when I hit an end point on the api what is given back is an array that has an id number, name, films, tv show, short animations, enemies if they have any.
 
-## Available Scripts
+## Description of application
 
-In the project directory, you can run:
+the user will be allowed to cycle though a list of disney characters. Then when they can click on the one that they want, and they will recieve information about the characters.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Wireframes:
+[Wireframe Created Using Figma](https://www.figma.com/file/zhlHmybwwZ6oVnql3n1rS5/Pokedex-Layout?node-id=0%3A1)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Desktop (All character)         |        Tablet (Listing) | Mobile (All character)  |
+:-------------------------:|:-------------------------:|:------------------:
+<img src="https://i.postimg.cc/htLSMfNJ/disney-All-characters-2022-03-21-at-3-15-27-AM.png" width="400">| <img src="" width="200">  | <img src="https://i.postimg.cc/Kvgck9ND/disney-mobile-all-character-2022-03-21-at-3-19-25-AM.png" width="150">  |
 
-### `npm test`
+Desktop (Homepage)                   |        Tablet (Homepage)            | Mobile (Homepage)          |
+ <img src="https://i.postimg.cc/rpqqHqLf/disney-search-desktop-2022-03-21-at-3-16-30-AM.png" width="400">| <img src="" width="200">  | <img src="https://i.postimg.cc/T1BRNmRb/disney-mobile-search-2022-03-21-at-3-21-12-AM.png" width="150">  |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ Desktop (Random)                   |        Tablet (Random)            | Mobile (Random)          |
+ <img src="https://i.postimg.cc/cLyxQQky/disney-rabdom-2022-03-21-at-3-18-24-AM.png" width="400">| <img src="" width="200">  | <img src="" width="150">  |
 
-### `npm run build`
+## Disney Api
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Disney Api](https://disneyapi.dev/).

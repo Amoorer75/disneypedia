@@ -1,38 +1,350 @@
-.App {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+header {
+  
+  /* background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%); */
+  border-bottom: 1px solid black;
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+li{
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  color:#fff;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-image: linear-gradient(45deg,#c22ed0 30%,#5ffae0 115% );
+  /* background-size: 700%; 
+  animation: bg-animation 35s infinite alternate;  */
+  
+} 
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+/* header img{
+  padding:5px;
+  height: ;
+  
+} */
+
+.char-main-view{
+  padding:20px;
+  display:grid;
+  gap:1.5em;;
+}
+
+.listandselected{
+  display:grid;
+  gap:1.5em;
+  
+}
+
+.grid-center-title{
+  display:grid;
+  gap:1.5em;
+  grid-template-columns:repeat(3,1fr);
+  justify-items: center;
+}
+
+.preview-char{
+  display:grid;
+  gap: 1.5em;
+  height:490px;
+  grid-template-columns: repeat(2,1fr);
+ 
+  /* grid-template-columns: repeat(3,1fr);
+  padding:20px; */
+     /* side scroll feature */
+  overflow-y: scroll;
+      /* .search-results-items {
+        flex: 0 0 auto;
+      }  */
+      
+}
+.title-col-span-2{
+  grid-column:span 3;
+}
+
+
+
+.preview-char::-webkit-scrollbar,
+.char-info::-webkit-scrollbar{
+  width:.5em;
+}
+
+.preview-char::-webkit-scrollbar-track,
+.char-info::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-border-radius:10pc;
+  border-radius: 10px;
+  display:none;
+}
+
+.preview-char::-webkit-scrollbar-thumb,
+.char-info::-webkit-scrollbar-thumb{
+  background-color:transparent;
+  /* outline: 1px solid slategray; */
+  border-radius:10px;
+  
+}
+
+.preview-char:hover::-webkit-scrollbar-thumb,
+.char-info:hover::-webkit-scrollbar-thumb{
+  background-color:rgba(128, 128, 128, 0.55);
+  transition: visibility 2s;
+}
+.selected-char{
+  justify-items: stretch;
+  display:grid;
+  gap: 1em;
+}
+.char-name{
+  background-color:rgba(116, 116, 116, 0.55);
+}
+.char-info{
+  overflow-y:scroll;
+  height:450px;
+
+}
+
+button img,
+button{
+  border-radius: 20%;
+  height: inherit;
+  /* height:oopx1; */
+  border:none;
+}
+button {
+   background-color:rgba(214, 214, 215, 0);
+}
+
+@keyframes bg-animation {
+  0%{background-position: left;}
+  100%{background-position: right;}
+  
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+.home section {
+  margin: auto;
+  width: 80%;
+  max-height: 800px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home .flip-card img {
+  cursor: pointer;
+  margin: auto;
+  width: 60%;
+  max-height: 600px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+.home div:first-of-type {
+  margin-top: 2em;
+}
+.home strong {
+  text-decoration: underline;
+}
+.flip-card {
+  perspective: 10000px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.inner {
+    /* side scroll feature */
+    /* display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+      .search-results-items {
+        flex: 0 0 auto;
+      } */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .inner {
+  transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.front,
+.back {
+  /* position: absolute; */
+  width: 100%;
+  height: 50%;
+  backface-visibility: hidden;
+}
+/* Style the front side (fallback if image is missing) */
+.front {
+  color: black;
+}
+/* Style the back side */
+.back {
+  transform: rotateY(180deg);
+}
+.flip-char{
+  padding:2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+@media (min-width: 50em){
+  nav {
+    /* max-width: 960px; */
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(0, 35, 122, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  nav ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(0, 35, 122, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav ul li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 35, 122, 0.7);
+  }
+
+  .preview-char{
+  grid-template-columns: repeat(3,1fr);
+  padding:20px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  }
+
+  .selected-char{
+   grid-template-columns: repeat(2,1fr);
+  }
+
+  .char-name{
+    display: flex;
+    justify-content: center;
+    grid-column: span 2;
+  
+  }
+  .flip-char{
+    display: grid;
+    gap:1.5em;
+    grid-template-columns: repeat(3,1fr); 
+  
+  }
+  .flip-char-grid-col-2{
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .flip-char-grid-col-3{
+    grid-column-start: 3;
+  }
+
+
+}
+
+@media (min-width: 30em){
+  
+ 
+  
+  
+ 
+  .listandselected{
+   
+    grid-template-columns: repeat(2,1fr);
+    min-height: 289px;
   }
 }
+@media (max-width: 30em){
+  .preview-char{
+   
+    display:flex;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: min-content;
+    align-items: center;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
