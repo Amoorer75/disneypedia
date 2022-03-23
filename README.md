@@ -24,3 +24,9 @@ Desktop (Homepage)                   |        Tablet (Homepage)            | Mob
 ## Disney Api
 
 [Disney Api](https://disneyapi.dev/).
+
+## MVP
+
+> * What I want want to have done is have all the characters display 
+> * display random characters and have them flip with information refresh
+> * add a button that gives new random characters.
