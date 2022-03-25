@@ -1,11 +1,13 @@
 import { useParams } from "react-router-dom";
-import Allies from "./charinfo/Allies";
-import Enemies from "./charinfo/Enemies";
-import Movies from "./charinfo/Movies";
-import Tvshows from "./charinfo/Tvshows";
-import VideoGames from "./charinfo/VideoGames";
+import Allies from "../../charinfo/Allies";
+import Enemies from "../../charinfo/Enemies";
+import Movies from "../../charinfo/Movies";
+import Tvshows from "../../charinfo/Tvshows";
+import VideoGames from "../../charinfo/VideoGames";
+import ShortFilms from "../../charinfo/ShortFilms";
+import ParkAttractions from "../../charinfo/ParkAttractions"
 
-export default function Selectedchar (props) {
+export default function Selectedcharfour (props) {
 
     const {item_id} = useParams();
     
@@ -26,8 +28,11 @@ export default function Selectedchar (props) {
 
             <div className='char-info'>
                 
+             
             <Tvshows tvshows= {item.tvShows} />
-            <Enemies enemies= {item.enemies} />
+            <ShortFilms shortFilms= {item.shortFilms} /> 
+            <ParkAttractions parkAttractions={item.parkAttractions} />
+            <Enemies enemies= {item.enemies} /> 
             <Allies allies= {item.allies} />
             <Movies movies= {item.films} />
             <VideoGames videoGames= {item.videoGames} />

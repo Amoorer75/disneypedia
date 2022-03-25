@@ -7,28 +7,27 @@ function Header() {
         <header >
             {/* <h1>Something to say</h1> */}
             {/* <img src='https://i.postimg.cc/xTBGKSvN/disney-pedia-logo.png' /> */}
-            <nav role="navigation">
-                <div id="menuToggle">
+            <nav class="hamburger-menu">
+                
 
-                <input type="checkbox" />
+                <input type="checkbox"  id="menu__toggle"/>
+                <label class="menu__btn" for="menu__toggle">
+                <span></span>
+                </label>
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-            <ul id="menu">
+            <ul class="menu__box">
                 <NavLink to={"/"}>
-                    <li>Home</li>
+                    <li  class="menu__item" >Home</li>
                 </NavLink>
                 <NavLink to={"/character"}>
-                    <li>All Characters</li>
+                    <li  class="menu__item" >All Characters</li>
                 </NavLink>
                 <NavLink to={"/movies"}>
-                    <li>Movies</li>
+                    <li  class="menu__item" >Movies</li>
                 </NavLink>
                 
             </ul>
-            </div>
+            
             </nav>
         </header>
     );

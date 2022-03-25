@@ -43,8 +43,9 @@ export default function Cardthree () {
                     />
                   </div>
                   <div className="back">
-                      {/* <img src={RandomGif} /> */}
-                      
+                  
+                  {card.name}
+                  
                   </div>
                 </div>
               </section>

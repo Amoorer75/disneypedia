@@ -42,7 +42,7 @@ export default function Cardtwo () {
                     />
                   </div>
                   <div className="back">
-                      {/* <img src={RandomGif} /> */}
+                      {card.name}
                       
                   </div>
                 </div>

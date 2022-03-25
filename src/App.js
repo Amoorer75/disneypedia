@@ -2,6 +2,7 @@
 import Header from './componet/Header';
 import Container from './Container'
 import './App.css';
+import Footer from './componet/Footer';
 
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
     <Container />
   
    </main>
+  
+     <Footer />
+   
  
   </div>
 );

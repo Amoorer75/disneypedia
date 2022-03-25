@@ -9,7 +9,7 @@ export default function HomePage () {
     return (
         <div>
             <div>
-           <Searchinput />
+           {/* <Searchinput /> */}
            </div>
             <div className='flip-char'>
                 <Cardone />
