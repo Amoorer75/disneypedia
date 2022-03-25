@@ -17,19 +17,41 @@ export default function Enemies (props) {
     },[])
        
         
-        const enemie = enemies.map((enemie) =>{
-            return(
-              <li>  {enemie} </li>
-            )
-        })
-  
+    const Evils = (evil) => {
 
+        if ( evil != 'None'){
+
+            return(
+                <div>   
+
+                <li>  {enemies} </li>
+                
+                </div>
+            )     
+    }
+} 
+  
+        const Catagory = (title) => {
+
+            if ( title != 'None'){
+        
+                return(
+                    <div>
+                    
+                    <h4>Enemies:</h4>
+        
+                    </div>
+                )
+                
+        }
+        } 
     
 
     return(
         <div>
             <ul>
-                <h4>Enemies:</h4>{enemie}
+            {Catagory(enemies)}
+            {Evils(enemies)}
             </ul>
 
         </div>

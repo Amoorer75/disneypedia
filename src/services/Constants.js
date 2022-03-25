@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 
-export async function Constants(){
-    const Result = await axios.get(`https://api.disneyapi.dev/characters?page=148`)
+export async function Mainpage(num){
+    const Result = await axios.get(`https://api.disneyapi.dev/characters?page=${num}`)
   
     .then(({ data }) => {
         return data;
@@ -10,6 +10,7 @@ export async function Constants(){
       return Result;
     
 }
+
 export async function HomeCardOne(num){
     const Result = await axios.get(`https://api.disneyapi.dev/characters/${num}`)
   

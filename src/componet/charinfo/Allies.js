@@ -17,19 +17,41 @@ export default function Allies (props) {
     },[])
        
         
-        const friend = allies.map((ally) =>{
-            return(
-              <li>  {ally} </li>
-            )
-        })
-  
+    const Friends = ( pal ) => {
 
+        if ( pal  != 'None'){
+
+            return(
+                <div>   
+
+                <li>  {allies} </li>
+                
+                </div>
+            )     
+    }
+} 
+  
+        const Catagory = (game) => {
+
+            if ( game != 'None'){
+        
+                return(
+                    <div>
+                    
+                    <h4>Allies:</h4>
+        
+                    </div>
+                )
+                
+        }
+        } 
     
 
     return(
         <div>
             <ul>
-                <h4>Allies:</h4>{friend}
+               {Catagory(allies)}
+               {Friends(allies)}
             </ul>
 
         </div>

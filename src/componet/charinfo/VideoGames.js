@@ -37,9 +37,9 @@ export default function VideoGames (props) {
 
 //this function is returning a result as long as our vidGame does't have
 //none in it
-const Catagory = (game) => {
+const Catagory = (title) => {
 
-    if ( game != 'None'){
+    if ( title != 'None'){
 
         return(
             <div>

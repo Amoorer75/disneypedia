@@ -1,25 +1,25 @@
 import {useState,useEffect} from 'react';
 
-export default function Tvshows (props) {
-    const [tvShow,setTvShow] = useState([])
+export default function ShortFilms (props) {
+    const [shortFilm,setShortFilm] = useState([])
 
     // console.log(props.tvshows)
 
     
     useEffect(() => {
-        if (props.tvshows.length != 0 ){
-            console.log(props.tvshows)  
-           return setTvShow(props.tvshows)
+        if (props.shortFilms.length != 0 ){
+            console.log(props.shortFilms)  
+           return setShortFilm(props.shortFilms)
         }else {
-            return setTvShow(['None'])
+            return setShortFilm(['None'])
         }
 
     },[])
        
         
-        //this function is returning a result as long as our vidGame does't have
+        //this function is returning a result as long as our sflims does't have
     //none in it
-    const tShow = (show) => {
+    const sFilms = (show) => {
 
         if ( show != 'None'){
 
@@ -33,7 +33,7 @@ export default function Tvshows (props) {
     }
 } 
 
-//this function is returning a result as long as our vidGame does't have
+//this function is returning a result as long as our sfilms does't have
 //none in it
 const Catagory = (title) => {
 
@@ -42,7 +42,7 @@ const Catagory = (title) => {
         return(
             <div>
             
-            <h4>Tv Shows:</h4>
+            <h4>Short Films:</h4>
 
             </div>
         )
@@ -52,8 +52,8 @@ const Catagory = (title) => {
     return(
         <div>
             <ul>
-                {Catagory(tvShow)}
-                {tShow(tvShow)}
+                {Catagory(shortFilm)}
+                {sFilms(shortFilm)}
             </ul>
 
         </div>

@@ -1,17 +1,17 @@
 import { useNavigate } from 'react-router-dom';
 
 
-export default function Getchar(props) {
+export default function Getcharfour(props) {
     const navigate = useNavigate();
 
     console.log(props.char)
 
-    const printOutChar = props.char.map((item) => {
+    const printOutChar = props.char.map((item,index) => {
         // console.log(item)
 
         return(
             <div className='charater'>
-               <button onClick={() => navigate(`/character/${item._id}`)}> <img src={item.imageUrl} />
+               <button key={index} onClick={() => navigate(`${item._id}`)}> <img src={item.imageUrl} />
                 <p>{item.name}</p></button>
             </div>
         )

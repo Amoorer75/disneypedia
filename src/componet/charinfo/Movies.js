@@ -17,19 +17,41 @@ export default function Movies (props) {
     },[])
        
         
-        const film = movies.map((movie ) =>{
+    const Movies = (film) => {
+
+        if ( film != 'None'){
+
             return(
-              <li>  {movie} </li>
-            )
-        })
-  
+                <div>   
+
+                <li>  {movies} </li>
+                
+                </div>
+            )     
+    }
+} 
+        const Catagory = (title) => {
+
+            if ( title != 'None'){
+        
+                return(
+                    <div>
+                    
+                    <h4>Movies:</h4>
+        
+                    </div>
+                )
+                
+        }
+        } 
 
     
 
     return(
         <div>
             <ul>
-                <h4>Films:</h4>{film}
+            {Catagory(movies)}
+            {Movies(movies)}
             </ul>
 
         </div>
