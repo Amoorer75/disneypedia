@@ -9,6 +9,7 @@ import HomePage from "./componet/Homepage"
 import Pagetwo from "./componet/pages/pagetwo/Pagetwo"
 import Pagethree from "./componet/pages/pagethree/Pagethree"
 import Pagefour from "./componet/pages/pagefour/pagefour"
+import Moviepage from "./componet/Moviepage"
 
 
 function Container(){
@@ -38,6 +39,8 @@ function Container(){
                 <Route path={':item_id'} element={<Selectedcharfour />} />
                
                 </Route>
+
+                <Route path={'movies'} element={<Moviepage /> } />
                 
                 <Route path={'*'} element={ <NotFound />} />
             </Routes>
