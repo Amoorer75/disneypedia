@@ -28,26 +28,33 @@ export default function Listofchar(){
         useEffect(() => {
             
             fetchData(pageNum)
-            
-        },[])
+             
+        },[pageNum])
         
-        //add 1 to pageNum
-        // function handleNext (e){
-        //    setHoldNum(e) 
-        //    console.log(holdNum)
-        // }
+
         
      function handleNext () {
 
         setPageNum(prevCount=> prevCount + 1)
+       
 
+     }
+     function handlePrev () {
+
+         if(pageNum !== 1){
+
+            return (
+                <button className='name noseselect prev' onClick={() => setPageNum(prevCount=> prevCount - 1)}>Next</button>
+            )
+         }
+         
      }
 
 
     return(
         <div className='char-main-view'>
             <div className='grid-center-title'>
-            
+            {handlePrev()}
             <h2 className='title-col-span-2'>{pageNum}</h2>
             {/* <button className='name noseselect next' onClick={() => navigate(`/page2`)}>Next</button> */}
             <button className='name noseselect next' onClick={(e) => handleNext(e)}>Next</button>

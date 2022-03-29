@@ -41,23 +41,30 @@ const [suggestions,setSuggestions] = useState([])
         setSuggestions(matches)
         setText(text)
     }
+
+    const onsuggestion = (text) => {
+        setText(text);
+        setSuggestions([]);
+    }
     
 
 return(
-    <div >
+    <div className=''>
          
          
 
-            <div className=''>
+            <div className='search'>
                 
 
-                <input type="text" className='' style={{marginTop: 10 }}
+                <input type="text" className='search-input' style={{marginTop: 10 }}
                 onChange={e => onChangeHandler(e.target.value)}
-                value={text} />
+                value={text}
+                 />
                  
               {suggestions && suggestions.map((suggestion,i) => 
 
-                <div key={i}>{suggestion.name}</div>
+                <div key={i} className='suggestion' onClick={() => onsuggestion(suggestion.name)  }>
+                {suggestion.name}</div>
 
               )}
                

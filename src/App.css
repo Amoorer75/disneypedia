@@ -390,6 +390,24 @@ button {
 .grid-center-title p{
   width: 100%;
 }
+.search{
+  max-width:40%;
+}
+.search-input{
+  width: 100%;
+}
+
+.suggestion{
+  cursor: pointer;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+
+}
+
+.suggestion:hover{
+  background-color: #8080806b;
+}
 
 
 
