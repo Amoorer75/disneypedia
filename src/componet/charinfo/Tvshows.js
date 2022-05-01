@@ -21,7 +21,7 @@ export default function Tvshows (props) {
     //none in it
     const tShow = (show) => {
 
-        if ( show != 'None'){
+        if ( show !='None'){
 
             return(
                 <div>   
