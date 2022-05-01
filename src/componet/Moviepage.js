@@ -1,5 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Mainpage } from '../services/Constants'
+import Allies from "./charinfo/Allies";
+import Enemies from "./charinfo/Enemies";
+import Movies from "./charinfo/Movies";
+import Tvshows from "./charinfo/Tvshows";
+import VideoGames from "./charinfo/VideoGames";
+import ShortFilms from "./charinfo/ShortFilms";
+import ParkAttractions from "./charinfo/ParkAttractions"
 
 
 export default function Moviepage() {
@@ -19,8 +26,6 @@ const [suggestions,setSuggestions] = useState([])
              const response = await Mainpage();
              setDisneyChars(response.data);
             console.log(response.data)
-            
-            
             } catch (error) {
                 console.log(error);
               }
@@ -33,7 +38,7 @@ const [suggestions,setSuggestions] = useState([])
         let matches = []
         if (text.length > 0){
             matches = disneyChars.filter((name) => {
-                // const regex = new RegExp[`${text}`, "gi"];
+                //const regex = new RegExp[`${text}`, "gi"];
                 return name.name.match(text)
             })
         }
@@ -46,10 +51,37 @@ const [suggestions,setSuggestions] = useState([])
         setText(text);
         setSuggestions([]);
     }
+
+const result = disneyChars.map((char) => {
+    if (text === char.name){
+    return(
+        <div className='selected-char'>
+        <div className='char-name'>
+        <h2>{char.name}</h2>
+        </div>
+
+    <img src={char.imageUrl} alt={char.name} />
+
+    <div className='char-info'>
+        
+    <Tvshows tvshows= {char.tvShows} />
+    <ShortFilms shortFilms= {char.shortFilms} /> 
+    <ParkAttractions parkAttractions={char.parkAttractions} />
+    <Enemies enemies= {char.enemies} />
+    <Allies allies= {char.allies} />
+    <Movies movies= {char.films} />
+    <VideoGames videoGames= {char.videoGames} />
+    </div>
+    </div>
+
+    )
+    }
     
+})
+    console.log(result)
 
 return(
-    <div className=''>
+    <div className='screen-movie'>
          
          
 
@@ -69,6 +101,9 @@ return(
               )}
                
             </div>
+
+            
+                {result}
             
         
           
